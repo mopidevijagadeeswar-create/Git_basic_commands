@@ -4,7 +4,8 @@
 =============================
 - git --version -> Check Git version
 - git config --global user.name "Your Name" -> Set username
-- git config --global user.email "youremail@example.com" - git config --list -> Show all config details -> Set email
+- git config --global user.email "youremail@example.com" -> Set email
+- - git config --list -> Show all config details 
  
 
 =============================
