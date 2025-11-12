@@ -70,6 +70,7 @@ Repository (.git folder) → stores the project history.
 - Issue: Used for tracking bugs or tasks.
 
  # GitHub Security Features
+ 
 - SSH keys for secure access.
 - 2FA (Two-Factor Authentication).
 - Branch protection rules to prevent accidental changes.
