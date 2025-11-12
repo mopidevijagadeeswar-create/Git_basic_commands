@@ -33,7 +33,7 @@ Repository (.git folder) → stores the project history.
 # Key Features of GitHub
 
 - Hosts Git repositories online.
-- Allows multiple users to collaborate.
+- Allows multiple users to collaborate. 
 - Pull Requests for merging code.
 - Issues and Project Boards for task tracking.
 - Actions for CI/CD (automation of testing & deployment).
