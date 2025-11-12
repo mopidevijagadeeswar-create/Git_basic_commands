@@ -9,8 +9,10 @@
 - git config --list -> Show all config details 
 - git config --global core.editor "code --wait" -> Set Visual Studio Code as the default Git editor
 - git help --config  -> opens the Git documentation (manual page) that explains all available configuration options you can set          using  git config.
-- git config --global –e      -> opens your global Git configuration file in the default text editor for editing.
+- git config --global –e    -> opens your global Git configuration file in the default text editor for editing.
 - git config --global colour.ui auto -> Enable colored output in Git commands
+- git config --system       -> Set/get a configuration value for all users on the system (requires admin/root).
+
 
 =============================
 ## 2. INITIALIZING REPOSITORY
@@ -28,7 +30,10 @@
 - git add . -> Add all files to staging
 - git commit -m "message" -> Commit staged files with a message
 - git commit -am "message"-> Add and commit tracked files in one step
-- 
+- git add -p   -> Interactive staging. Allows you to review and stage changes in chunks (or "hunks") within a file.
+- git commit --amend -> Modify the last commit
+- git commit --allow-empty -> Creates a commit with no changes (useful for marking milestones or triggering CI/CD).
+
 =============================
 ## 4. BRANCHING
 =============================
@@ -39,7 +44,11 @@
 - git checkout -b <name> -> Create and switch to a new branch
 - git merge <branch> -> Merge branch into current
 - git branch -d <name> -> Delete a branch
-- 
+- git switch <branch-name> -> A modern, safer alternative to git checkout specifically for switching branches.
+- git switch -c <new-branch> -> The modern, safer alternative to git checkout -b for creating and switching to a new branch.
+- git branch -vv -> Lists all local branches, showing their upstream tracking branches and the status (e.g., ahead/behind).
+
+
 =============================
 ## 5. REMOTE REPOSITORIES
 =============================
@@ -50,7 +59,11 @@
 - git push -u origin main -> Push to remote main branch
 - git pull origin main -> Pull updates from remote
 - git fetch -> Fetch updates without merging
-- 
+- git remote rename <old> <new>  -> Renames an existing remote (e.g., renaming origin to upstream).
+- git remote rm <name>   ->Removes a specified remote connection from your repository.
+- git pull --rebase   -> Fetches updates and then applies your local commits on top of the new remote changes (avoids an unnecessary merge commit).
+
+
 =============================
 ## 6. UNDO & RESET COMMANDS
 =============================
@@ -59,7 +72,10 @@
 - git reset <file> -> Unstage a file
 - git reset --hard HEAD -> Reset all changes to last commit
 - git revert <commit> -> Revert a specific commit
-- 
+- git checkout -- <file>. -> An older,verbose equivalent of git restore <file>: discards changes in the working directory for a specific file.
+- git reset <file>This is already in your list, but explicitly: it unstages a file, moving it back to the working directory.
+- git clean -fd  ->   Deletes untracked files (-f) and untracked directories (-d).
+
 =============================
 ## 7. VIEWING HISTORY
 =============================
@@ -68,7 +84,10 @@
 - git log --oneline -> Compact view of commits
 - git diff -> Show file differences
 - git show <commit> -> Show details of a specific commit
-- 
+- git blame <file>	-> Shows who last modified each line of a given file and in which commit.
+- git log -S "text"	-> Picksaxe search: Shows commits that introduce or remove a specific string of text.
+- git log <branch1>..<branch2>	-> Shows commits that are on branch2 but not on branch1.
+
 =============================
 ## 8. GITHUB COMMANDS
 =============================
@@ -87,13 +106,13 @@
 - git tag -> List tags
 - git tag -a v1.0 -m "Version 1" -> Create annotated tag
 - git push origin v1.0 -> Push tag to GitHub
-- 
+
 =============================
 ## 10. IGNORING FILES
 =============================
 
 - Create .gitignore file and list files/folders to ignore
-- 
+
 =============================
 ## 11. STASHING
 =============================
@@ -102,14 +121,17 @@
 - git stash list -> List stashed changes
 - git stash pop -> Apply last stash and remove it
 - git stash apply -> Apply last stash without removing it
-- 
+- git stash show -p	Shows the full diff of the most recent stash, instead of just a file list.
+- git stash branch <new-branch-name>	-> Creates a new branch based on the commit where the stash was created, and then applies the stashed changes to it.
+
+
 =============================
 ## 12. ALIASES
 =============================
 
 - git config --global alias.st status
 - git config --global alias.cm "commit -m"
-- 
+
 =============================
 ## 13. COMMON SHORTCUTS
 =============================
@@ -117,7 +139,11 @@
 - git diff HEAD~1 HEAD -> Compare last two commits
 - git log --graph --oneline --all-> Visual branch history
 - git fetch --all --prune -> Sync with remote branches
-- 
+- git bisect	A powerful tool for finding the specific commit that introduced a bug by automatically performing a binary search on the   commit history.
+- git rebase -i HEAD~<n>	Interactive Rebase. Used to clean up history, squash/combine commits, edit commit messages, or reorder commits from the last n commits.
+- git cherry-pick <commit-hash>	Applies a specific commit from one branch onto the branch you are currently on.
+
+
 =============================
 ## 14. GITHUB EXTRA
 =============================
@@ -126,7 +152,7 @@
 - Pull Request -> Propose changes to original repo
 - Issues -> Track bugs or requests
 - Actions -> Automate workflows
-- 
+
 =============================
 ## 15. DELETE COMMANDS
 =============================
