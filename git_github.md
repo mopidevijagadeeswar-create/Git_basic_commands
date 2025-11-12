@@ -24,8 +24,6 @@ Repository (.git folder) → stores the project history.
 [Working Directory] → git add → [Staging Area] → git commit → [Repository]
 
 
-
-
 # What is GitHub?
 - GitHub is a cloud-based platform that hosts Git repositories online.
 - It provides tools for collaboration, code review, and project management.
@@ -62,20 +60,21 @@ Repository (.git folder) → stores the project history.
 ![alt text](image.png)
 
 ## Important Git Concepts
--- Repository: A directory that stores your project.
--- Commit: A snapshot of changes.
--- Branch: A parallel version of your project.
--- Merge: Combine changes from different branches.
--- HEAD: Pointer to the latest commit.
--- Fork: Copy of someone’s GitHub repo under your account.
--- Pull Request (PR): A request to merge code from one branch to another.
--- Issue: Used for tracking bugs or tasks.
+- Repository: A directory that stores your project.
+- Commit: A snapshot of changes.
+- Branch: A parallel version of your project.
+- Merge: Combine changes from different branches.
+- HEAD: Pointer to the latest commit.
+- Fork: Copy of someone’s GitHub repo under your account.
+- Pull Request (PR): A request to merge code from one branch to another.
+- Issue: Used for tracking bugs or tasks.
 
  # GitHub Security Features
--- SSH keys for secure access.
--- 2FA (Two-Factor Authentication).
--- Branch protection rules to prevent accidental changes.
--- Private Repositories for restricted access.
+- SSH keys for secure access.
+- 2FA (Two-Factor Authentication).
+- Branch protection rules to prevent accidental changes.
+- Private Repositories for restricted access.
+  
 # Real-Life Uses
 - Track code history
 - Collaborate with team
