@@ -1,4 +1,5 @@
-# Git and GitHub Commands - Complete Notes
+#                                           Git and GitHub Commands - Complete Notes
+
 =============================
 ## 1. GIT BASICS
 =============================
@@ -6,7 +7,10 @@
 - git config --global user.name "Your Name" -> Set username
 - git config --global user.email "youremail@example.com" -> Set email
 - git config --list -> Show all config details 
- 
+- git config --global core.editor "code --wait" -> Set Visual Studio Code as the default Git editor
+- git help --config  -> opens the Git documentation (manual page) that explains all available configuration options you can set          using  git config.
+- git config --global –e      -> opens your global Git configuration file in the default text editor for editing.
+- git config --global colour.ui auto -> Enable colored output in Git commands
 
 =============================
 ## 2. INITIALIZING REPOSITORY
