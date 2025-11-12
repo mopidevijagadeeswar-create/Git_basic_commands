@@ -38,23 +38,23 @@ Repository (.git folder) → stores the project history.
 
 
 
-# Feature	                  Git	                            GitHub
--Type	                Version Control System	            Hosting Service
--Internet Required	            No	                               Yes
--Installed on	          Local Computer	                 Cloud (Website)
--Purpose	             Track code changes	               Store and share Git repositories
--Command Line	             Yes	                         Web Interface (GUI)
--Example	              git init, git commit	            github.com/username/repo
+#  Feature	                  Git	                            GitHub
+- Type	                Version Control System	            Hosting Service
+- Internet Required	            No	                               Yes
+- Installed on	          Local Computer	                 Cloud (Website)
+- Purpose	             Track code changes	               Store and share Git repositories
+- Command Line	             Yes	                         Web Interface (GUI)
+- Example	              git init, git commit	            github.com/username/repo
 
 # Term	                   Meaning
-+Git	                Version control tool
-+GitHub	        Platform to host Git repositories
-+Commit	                  Save point
-+Branch	         Separate development line
-+Merge	               Combine branches
-+Push/Pull	      Upload/Download changes
-+Clone	                 Copy repo
-+Fork	     Copy someone else’s repo to your account
++ Git	                Version control tool
++ GitHub	        Platform to host Git repositories
++ Commit	                  Save point
++ Branch	         Separate development line
++ Merge	               Combine branches
++ Push/Pull	      Upload/Download changes
++ Clone	                 Copy repo
++ Fork	     Copy someone else’s repo to your account
 
 
 ![alt text](image.png)
