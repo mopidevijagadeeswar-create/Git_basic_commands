@@ -13,7 +13,7 @@ Git is a distributed version control system (VCS). It helps developers track cha
 Git tracks changes using snapshots, not differences.
 Each time you commit, Git takes a snapshot of your entire project and links it to the previous one.
 
-🔸 The Three Git States:
+## The Three Git States:
 
 Working Directory → your local files.
 
