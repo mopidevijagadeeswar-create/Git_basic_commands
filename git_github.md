@@ -3,3 +3,4 @@ Git is a distributed version control system (VCS). It helps developers track cha
 
 ## Key Features of Git
 - VERSION CONTROL: Track changes to files over time. 
+- Distributed System: Every developer has a full copy of the repository.
